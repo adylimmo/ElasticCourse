@@ -1,4 +1,4 @@
-# ======================== Elasticsearch Configuration =========================
+# ======================== Elasticsearch Configuration Node 3 =========================
 #
 # NOTE: Elasticsearch comes with reasonable defaults for most settings.
 #       Before you set out to tweak and tune the configuration, make sure you
@@ -67,7 +67,8 @@ path.logs: /var/log/elasticsearch
 # Pass an initial list of hosts to perform discovery when this node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-discovery.seed_hosts: ["node1_ip", "node2_ip"] # Change it! 
+# discovery.seed_hosts: ["node1_ip", "node2_ip"] # Change it! 
+discovery.seed_hosts: ["192.168.56.222", "192.168.56.223"] # Change it! 
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
